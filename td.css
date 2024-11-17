@@ -1,0 +1,180 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #101075;  /* Navy Blue background for the webpage */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* To-Do Container Styling */
+.todo-container {
+    background-color: #000000;  /* Black background for the container */
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-container:hover {
+    transform: translateY(-10px);  /* Hover effect to slightly lift the container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);  /* Darker shadow on hover */
+    background-color: #08123c;  /* Dark Blue when hovered */
+}
+
+/* Header Styling */
+.header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #e0f991, #e0f784); /* Gradient color for header */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Progress Bar Styling */
+.progress-container {
+    background-color: rgb(183, 183, 255);
+    border-radius: 15px;
+    height: 15px;
+    width: 100%;
+    margin: 15px 0;
+    position: relative;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);  /* Gradient background for the progress bar */
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    transition: width 0.3s;
+}
+
+/* Task Counter Styling */
+#task-counter {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    color: white;  /* Set text to white */
+}
+
+input[type="text"]:focus {
+    background-color: #444;
+    outline: none;
+}
+
+/* Button Styling */
+#add-task-btn {
+    padding: 15px 30px;  /* Increased size of button */
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7e5f;  /* Gradient color for button */
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;  /* Increased font size */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add-task-btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Gradient hover effect */
+    transform: scale(1.1);  /* Slight scale effect on hover */
+}
+
+/* Task List Styling */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Individual Task Styling */
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #444;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.task.complete {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task:hover {
+    background-color: #3c3f56;  /* Darken background on hover */
+}
+
+/* Task Button Styling */
+.task button {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.task button:hover {
+    color: #ff7e5f;  /* Change color on hover */
+}
+
+/* Container for Input and Button */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Styling for Flex Layout in Input and Button Container */
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    color: white;  /* Set text to white */
+}
+
+.input-container input[type="text"]:focus {
+    background-color: #444;
+    outline: none;
+}
+
+.input-container #add-task-btn {
+    padding: 15px 30px;  /* Increased size of button */
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7e5f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px; /* Space between input and button */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.input-container #add-task-btn:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Gradient hover effect */
+    transform: scale(1.1);  /* Slight scale effect on hover */
+}

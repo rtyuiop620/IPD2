@@ -1,0 +1,215 @@
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    background-image: url('computer.jpg');  /* Set the background image */
+    background-size: cover;  /* Make sure the image covers the whole page */
+    background-position: center;  /* Center the image */
+    margin: 0;
+    padding: 0;
+    color: #fff;  /* Ensure text color stands out against the background */
+}
+
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #83C5BE;
+}
+
+/* Hero Section */
+#hero {
+    background: rgba(0, 102, 204, 0.7);  /* Dark blue with transparency */
+    background-blend-mode: overlay;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Course Content Section */
+#courseContent {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background for contrast */
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+.course-topic {
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* About Us Section */
+#aboutUs {
+    background-color: rgba(255, 255, 255, 0.9);  /* Light background with transparency */
+    color: #333;
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+#aboutUs h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#aboutUs p {
+    font-size: 1.2rem;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #182848;
+    color: #ffffff;
+    padding : 40px 20px;
+   margin-top: 12.5%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #f4a261;
+    text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f4a261;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #182848;
+    border-radius: 50%;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #f4a261;
+    color: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 15px;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Media Queries */
+@media (max-width: 767px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+}
